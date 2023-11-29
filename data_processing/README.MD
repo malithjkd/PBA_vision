@@ -86,7 +86,7 @@
     In Ubuntu 
 
     ```consol
-    ssh malithjkd@192.168.1.53
+    ssh malithjkd@192.168.3.30
     ```
 
 ### First time jupyter setup work (user setup)
@@ -145,7 +145,7 @@ In wondows : use CMD
 In Ubutntu : use termilal
 
 ```console
-ssh -N -f -L localhost:9006:localhost:9996 malithjkd@192.168.1.53
+ssh -N -f -L localhost:9006:localhost:9996 malithjkd@192.168.3.30
 ```
 
 Then start browser to give url
@@ -154,7 +154,7 @@ Then start browser to give url
 localhost:9006
 ```
 
-jupyter notebook should work now!!!
+jupyter notebook should work now !!!
 
 
 #### To copy files from local pc to server
@@ -163,5 +163,7 @@ go to the file location
 ```console
 cd
 
-scp 1_12_1_0.txt haptic@haptic.elect.projects.uom.lk:malith/
+scp *.png malithjkd@192.168.1.53:home/
 ```
+
+
