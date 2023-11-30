@@ -158,12 +158,14 @@ jupyter notebook should work now !!!
 
 
 #### To copy files from local pc to server
-go to the file location 
+Windows : Use [FileZilla client](https://filezilla-project.org/download.php?platform=win64) 
+
+Ubuntu : use scp  
 
 ```console
-cd
+cd /home/...
 
-scp *.png malithjkd@192.168.1.53:home/
+scp *.png malithjkd@192.168.3.30:home/
 ```
 
 
