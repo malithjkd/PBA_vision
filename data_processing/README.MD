@@ -80,13 +80,13 @@
 
 2. Connect to the remote server 
     In Windows: 
-    User 1: malithjkd@<server_IP> port 80
-    User 2: rnd_server@<server_IP> port 80
+    User 1: malithjkd@192.168.3.30
+    User 2: rnd_server@192.168.3.30
 
     In Ubuntu 
 
     ```consol
-    ssh malithjkd@192.168.3.30
+    ssh rnd_server@192.168.3.30
     ```
 
 ### First time jupyter setup work (user setup)
@@ -125,16 +125,25 @@
 3. Create password for jupyter notebook
 
     ```console
-    jupyter lab password
+    jupyter notebook password
     
     ```
     enter password 2 times
 
-4. Start jupyter notbook server without browser and specific port
 
-    ```console
-    jupyter lab --no-browser --port=9996
-    ```
+## Start jupyter notebook in Server end
+
+Go to file location 
+
+```consol
+cd /...
+```
+
+Start jupyter notbook server without browser and specific port
+
+```console
+jupyter notebook --no-browser --port=9996
+```
 
 
 ## Local pc setup for Jupyter notebook setup
@@ -145,12 +154,13 @@ In wondows : use CMD
 In Ubutntu : use termilal
 
 ```console
-ssh -N -f -L localhost:9006:localhost:9996 malithjkd@192.168.3.30
+ssh -N -f -L localhost:9006:localhost:9996 rnd_server@192.168.3.30
 ```
+If no feedback after password
 
-Then start browser to give url
+Then start browser to give url [localhost:9006](http://localhost:9006/)
 
-```console
+```consol
 localhost:9006
 ```
 
