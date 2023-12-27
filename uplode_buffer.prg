@@ -1,0 +1,30 @@
+#/ Controller version = 3.11.01
+#/ Date = 12/14/2023 12:08 PM
+#/ User remarks = 
+#10
+! MOTION
+
+REAL COUNT
+
+ENABLE 0
+ENABLE 1
+
+COMMUT 0
+COMMUT 1
+WAIT 10000
+
+WHILE (COUNT < 110)
+	
+	PTP 0,15; PTP 1,15
+	WAIT 500
+	
+	PTP 0,0;  PTP 1,0
+	WAIT 500
+	
+	COUNT = COUNT +1
+	
+	DISP COUNT
+END
+
+
+STOP
